@@ -1,0 +1,116 @@
+body {
+    background-color: #121212;
+    overflow: hidden;
+    color: #ccc;
+    font-size: 25px;
+}
+
+#loadingPage {
+    z-index: 1;
+    background-color: #121212;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+#loading {
+    margin: 50px;
+    width: 100px;
+}
+
+
+#map {
+    width: 80%;
+    text-align: center;
+    float: right;
+}
+
+#side {
+    width: 20%;
+    text-align: center;
+    float: left;
+}
+
+#container {
+    width: fit-content;
+    margin: auto;
+}
+
+#countrySelect {
+    width: 100%;
+}
+
+#toggle {
+    background-color: #ccc;
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 10px auto 30px auto;
+    cursor: pointer;
+}
+
+#toggleInside {
+    background-color: #244A66FF;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-left: 0;
+    transition: margin-left 0.5s;
+}
+
+#toggleInside.blue {
+    margin-left: 30px;
+    background-color: #121212;
+}
+
+.button {
+    width: 95%;
+    padding: 5px;
+    text-align: center;
+    background-color: #cccccc;
+    color: #121212;
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 10px auto 10px auto;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button:active {
+    transition: 0.1s;
+    transform: scale(1);
+}
+
+#gameText {
+    display: none;
+    font-size: 20px;
+}
+
+#countryToFind {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+#tooltip {
+    display: none;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.83);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    border: 2px solid #ccc;
+    text-align: center;
+    font-size: 20px;
+}
+
+#map.game .land {
+    cursor: pointer;
+}
